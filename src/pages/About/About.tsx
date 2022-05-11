@@ -1,14 +1,13 @@
 import React from "react";
 import Navigation from "../../components/Navigation";
-import Bio from "../../components/Bio";
 
-const Landing = () => {
+const About = () => {
   return (
     <div>
       <Navigation />
-      <Bio />
+      <h2>About</h2>
     </div>
   );
 };
 
-export default Landing;
+export default About;
