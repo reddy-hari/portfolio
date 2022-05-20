@@ -12,22 +12,20 @@ import { certificates, degrees } from "../../assets/education";
 import { workExperience, workSummary } from "../../assets/workExperience";
 import Navigation from "../../components/Navigation";
 
-const padding = {
-  padding: "2em",
-};
-
 const Work = () => {
   return (
     <div>
       <Navigation />
 
-      <Grid padded>
+      <Grid padded relaxed="very">
         <Grid.Column width={12}>
           <Item.Group>
             <h1>Professional Experience</h1>
           </Item.Group>
 
           <Item.Group>
+            <h3>Summary</h3>
+            <hr></hr>
             <Item>
               <List bulleted>
                 {workSummary.map((ws) => {
@@ -36,7 +34,8 @@ const Work = () => {
               </List>
             </Item>
           </Item.Group>
-
+          <h3>Job Roles & Position Specifics </h3>
+          <hr></hr>
           <Item.Group divided relaxed="very">
             {workExperience.map((ex, index) => {
               return (

@@ -5,6 +5,7 @@ import About from "../pages/About";
 import Gallery from "../pages/Gallery";
 import Landing from "../pages/Landing";
 import Work from "../pages/Work";
+import NotFound from "../components/NotFound";
 
 const Paths = () => {
   let routes = ReactRouterDOM.useRoutes([
@@ -17,7 +18,5 @@ const Paths = () => {
   ]);
   return routes;
 };
-
-const NotFound = () => <div style={{ padding: "2em" }}>Not Found</div>;
 
 export default Paths;
