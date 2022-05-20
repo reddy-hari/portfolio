@@ -23,6 +23,9 @@ const Navigation = () => {
           <Link to="/blog">
             <Menu.Item name="blog" active={true}></Menu.Item>
           </Link>
+          <Link to="/about">
+            <Menu.Item name="about" active={true}></Menu.Item>
+          </Link>
         </Menu.Menu>
       </Menu>
     </div>

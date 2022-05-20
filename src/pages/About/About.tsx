@@ -1,11 +1,12 @@
 import React from "react";
+import Bio from "../../components/Bio";
 import Navigation from "../../components/Navigation";
 
 const About = () => {
   return (
     <div>
       <Navigation />
-      <h2>About</h2>
+      <Bio />
     </div>
   );
 };
