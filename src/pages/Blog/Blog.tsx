@@ -1,11 +1,12 @@
 import React from "react";
 import Navigation from "../../components/Navigation";
+import MediumBlog from "./MediumBlog/MediumBlog";
 
 const Blog = () => {
   return (
     <div>
       <Navigation />
-      <h2>Blog</h2>
+      <MediumBlog></MediumBlog>
     </div>
   );
 };

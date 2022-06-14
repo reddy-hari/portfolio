@@ -29,7 +29,7 @@ const Work = () => {
             <Item>
               <List bulleted>
                 {workSummary.map((ws) => {
-                  return <List.Item>{ws}</List.Item>;
+                  return <List.Item key={ws}>{ws}</List.Item>;
                 })}
               </List>
             </Item>
@@ -65,10 +65,10 @@ const Work = () => {
               <Card.Header>Education</Card.Header>
               <Feed size="small">
                 {degrees.map((degree) => (
-                  <Item.Group>
+                  <Item.Group key={degree.graduated}>
                     <Feed.Event>
                       <Feed.Content>
-                        <List vertical size="small">
+                        <List vertical="true" size="small">
                           <List.Item>
                             <Feed.Label>
                               {degree.course} | {degree.major}
@@ -98,10 +98,10 @@ const Work = () => {
               <Card.Header>Certifications</Card.Header>
               <Feed size="small">
                 {certificates.map((certificate) => (
-                  <Item.Group>
+                  <Item.Group key={certificate.credential}>
                     <Feed.Event>
                       <Feed.Content>
-                        <List vertical size="small">
+                        <List vertical="true" size="small">
                           <List.Item>
                             <a
                               href={certificate.link}

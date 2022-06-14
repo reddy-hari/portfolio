@@ -6,12 +6,13 @@ import Gallery from "../pages/Gallery";
 import Landing from "../pages/Landing";
 import Work from "../pages/Work";
 import NotFound from "../components/NotFound";
+import Blog from "../pages/Blog";
 
 const Paths = () => {
   let routes = ReactRouterDOM.useRoutes([
     { path: "/", element: <Landing /> },
     { path: "gallery", element: <Gallery /> },
-    { path: "blog", element: <Landing /> },
+    { path: "blog", element: <Blog /> },
     { path: "work", element: <Work /> },
     { path: "about", element: <About /> },
     { path: "*", element: <NotFound /> },
