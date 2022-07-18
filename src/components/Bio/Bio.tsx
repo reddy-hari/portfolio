@@ -36,7 +36,7 @@ const Bio = () => {
             marginBottom: "2em",
           }}
         >
-          A modern nomad sharing a journey!
+          Nomad in ways, sharing a story or two!
         </div>
         <div
           style={{

@@ -1,12 +1,16 @@
 import React from "react";
+import Footer from "../../components/Footer";
 import Navigation from "../../components/Navigation";
-import MediumBlog from "./MediumBlog/MediumBlog";
+import MediumBlog from "./Medium";
+import YouTubeBlog from "./YouTube";
 
 const Blog = () => {
   return (
     <div>
       <Navigation />
-      <MediumBlog></MediumBlog>
+      <YouTubeBlog />
+      <MediumBlog />
+      <Footer />
     </div>
   );
 };

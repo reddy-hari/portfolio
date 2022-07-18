@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Header, Icon } from "semantic-ui-react";
 import { API_Key, RSS_2_JSON, RSS_URL } from "../../../constants/constants";
 import MediumBlogCard from "./MediumBlogCard";
 import { MediumStories } from "./MediumTypes";
@@ -20,15 +21,10 @@ const MediumBlog = () => {
 
   useEffect(() => {
     const mediumStories = axios.get(RSS_2_JSON, {
-      params: { rss_url: "https://medium.com/feed/@mehulkothari05" },
-      // params: { rss_url: RSS_URL.medium, api_key: API_Key.medium },
+      params: { rss_url: RSS_URL.medium, api_key: API_Key.medium },
     });
 
     mediumStories.then((stories) => {
-      // const stringifiedStories = JSON.stringify(stories);
-      // const parsedStories = JSON.parse(stringifiedStories);
-      // const storiesData = parsedStories.data;
-      // console.log(storiesData);
       setMediumBlog(stories.data);
     });
 
@@ -37,10 +33,13 @@ const MediumBlog = () => {
 
   return (
     <div>
-      {/* <div>
-        <pre>{mediumBlog.items.map((blogPost) => JSON.stringify(blogPost, null, 2))}</pre>
-      </div> */}
-      <div className="ui cards centered">
+      <div style={{ margin: "2em" }}>
+        <Header as="h2" icon textAlign="center">
+          <Icon name="medium" />
+          <Header.Content>Medium Blog Posts</Header.Content>
+        </Header>
+      </div>
+      <div className="ui cards centered" style={{ margin: "1em" }}>
         {mediumBlog.items.map((bp) => {
           return <MediumBlogCard key={bp.guid} blogPost={bp} />;
         })}

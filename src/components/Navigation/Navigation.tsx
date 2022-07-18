@@ -16,8 +16,8 @@ const Navigation = () => {
           </Link>
         </Menu.Menu>
         <Menu.Menu position="right">
-          <Link to="/hireme">
-            <Menu.Item name="Hire Me" active={true}></Menu.Item>
+          <Link to="/services">
+            <Menu.Item name="Services" active={true}></Menu.Item>
           </Link>
           <Link to="/work">
             <Menu.Item name="work" active={true}></Menu.Item>

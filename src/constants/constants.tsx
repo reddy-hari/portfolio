@@ -10,6 +10,9 @@ export const socialMediaLink = {
 /** RSS To JSON URL */
 export const RSS_2_JSON = "https://api.rss2json.com/v1/api.json";
 
+/** YouTube API URL */
+export const YouTube_API = "https://www.googleapis.com/youtube/v3/search";
+
 /** RSS Feed URLs */
 export const RSS_URL = {
   medium: "https://medium.com/feed/@harireddy05",
@@ -18,6 +21,11 @@ export const RSS_URL = {
 /** APIs */
 export const API_Key = {
   medium: "wepiq93yeugc6kzt6t3qecvxq9q9lnv2kugact3v",
+  youtube: "AIzaSyAklKXxxSfdSppM37jyjILCXbyL3quIvPE",
+};
+
+export const ID = {
+  youtube: "UCcU3V5tJelRJbQ9OlNwWIvg",
 };
 
 /** Colors */
