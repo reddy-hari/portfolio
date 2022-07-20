@@ -4,6 +4,7 @@ import { Header, Icon } from "semantic-ui-react";
 import { API_Key, RSS_2_JSON, RSS_URL } from "../../../constants/constants";
 import MediumBlogCard from "./MediumBlogCard";
 import { MediumStories } from "./MediumTypes";
+import "../../../shared/HorizontalLine.css";
 
 const MediumBlog = () => {
   const [mediumBlog, setMediumBlog] = useState<MediumStories>({
@@ -34,9 +35,11 @@ const MediumBlog = () => {
   return (
     <div>
       <div style={{ margin: "2em" }}>
-        <Header as="h2" icon textAlign="center">
-          <Icon name="medium" />
-          <Header.Content>Medium Blog Posts</Header.Content>
+        <Header as="h4" id="pageHeaderLine">
+          <Icon name="medium" style={{ display: "inline-block" }} />
+          <Header.Content style={{ display: "inline-block", padding: "0em" }}>
+            Medium Blog Posts
+          </Header.Content>
         </Header>
       </div>
       <div className="ui cards centered" style={{ margin: "1em" }}>

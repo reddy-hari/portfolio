@@ -1,0 +1,25 @@
+#pageHeaderLine {
+  overflow: hidden;
+  text-align: center;
+}
+
+#pageHeaderLine:before,
+#pageHeaderLine:after {
+  background-color: gray;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+#pageHeaderLine:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+#pageHeaderLine:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
